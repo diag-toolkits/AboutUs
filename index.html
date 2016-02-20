@@ -39,33 +39,33 @@ System event logs are often the primary source of information for diagnosing (an
 
 <hr>
 
-<p>Title:  Linking Resource Usage Anomalies with System Failures from Cluster Log Data<br>
-Collaborators:  University of Warwick (UK), University of Texas at Austin (USA), Texas Advanced Computing Center (USA), Xyratex (UK)<br>
-Publication:  IEEE SRDS 2013.  <a href="http://dx.doi.org/10.1109/SRDS.2013.20">http://dx.doi.org/10.1109/SRDS.2013.20</a> 
+<p><strong>Title:  Linking Resource Usage Anomalies with System Failures from Cluster Log Data</strong><br>
+<strong>Collaborators</strong>:  University of Warwick (UK), University of Texas at Austin (USA), Texas Advanced Computing Center (USA), Xyratex (UK)<br>
+<strong>Publication</strong>:  IEEE SRDS 2013.  <a href="http://dx.doi.org/10.1109/SRDS.2013.20">http://dx.doi.org/10.1109/SRDS.2013.20</a> 
 <br><br>
 Bursts of abnormally high use of resources are thought to be an indirect cause of failures in large cluster systems, but little work has systematically investigated the role of high resource usage on system failures, largely due to the lack of a comprehensive resource monitoring tool which resolves resource use by job and node.  The recently developed TACC_Stats resource use monitor provides the required resource use data.  We present the ANCOR diagnostics system that applies TACC_Stats data to identify resource use anomalies and applies log analysis to link resource use anomalies with system failures.  Application of ANCOR to first identify multiple sources of resource anomalies on the Ranger supercomputer, then correlate them with failures recorded in the message logs and diagnosing the cause of the failures, has identified four new causes of compute node soft lockups.  ANCOR can be adapted to any system that uses a resource use monitor which resolves resource use by job.</p>
 
 <hr>
 
-<p>Title:  Online Failure Prediction for HPC Resources using Decentralized Clustering<br>
-Collaborators:  University of Texas at Austin (USA), Rutgers University (USA), Xerox Research (USA)<br>
-Publication:  IEEE HiPC 2014.  <a href="http://dx.doi.org/10.1109/HiPC.2014.7116903">http://dx.doi.org/10.1109/HiPC.2014.7116903</a> 
+<p><strong>Title:  Online Failure Prediction for HPC Resources using Decentralized Clustering</strong><br>
+<strong>Collaborators</strong>:  University of Texas at Austin (USA), Rutgers University (USA), Xerox Research (USA)<br>
+<strong>Publication</strong>:  IEEE HiPC 2014.  <a href="http://dx.doi.org/10.1109/HiPC.2014.7116903">http://dx.doi.org/10.1109/HiPC.2014.7116903</a> 
 <br><br>
 Ensuring high reliability of large-scale clusters is becoming more critical as the size of these machines continues to grow, since this increases the complexity and amount of interactions between different nodes and thus results in a high failure frequency.  For this reason, predicting node failures in order to prevent errors from happening in the first place has become extremely valuable.  A common approach for failure prediction is to analyze traces of system events to find correlations between event types or anomalous event patterns and node failures, and to use the types or patterns identified as failure predictors at run-time.  However, typical centralized solutions for failure prediction in this manner suffer from high transmission and processing overheads at very large scales.  We present a solution to the problem of predicting compute node soft-lockups in large scale clusters by using a decentralized online clustering algorithm (DOC) to detect anomalies in resource usage logs, which have been shown to correlate to particular types of node failures in supercomputer clusters.  We demonstrate the effectiveness of this system by using the monitoring logs from the Ranger supercomputer at Texas Advanced Computing Center.  Experiments shows that this approach can achieve similar accuracy as other related approaches, while maintaining low RAM and bandwidth usage, with a runtime impact to current running applications of less than 2%.</p>
 
 <hr>
 
-<p>Title:  Towards Detecting Patterns in Failure Logs of Large-Scale Distributed Systems<br>
-Collaborators:  University of Warwick (UK), University of Texas at Austin (USA)<br>
-Publication:  IEEE DPDNS (IPDPS Workshops) 2015.  <a href="http://dx.doi.org/10.1109/IPDPSW.2015.109">http://dx.doi.org/10.1109/IPDPSW.2015.109</a> 
+<p><strong>Title:  Towards Detecting Patterns in Failure Logs of Large-Scale Distributed Systems</strong><br>
+<strong>Collaborators</strong>:  University of Warwick (UK), University of Texas at Austin (USA)<br>
+<strong>Publication</strong>:  IEEE DPDNS (IPDPS Workshops) 2015.  <a href="http://dx.doi.org/10.1109/IPDPSW.2015.109">http://dx.doi.org/10.1109/IPDPSW.2015.109</a> 
 <br><br>
 The ability to automatically detect faults or fault patterns to enhance system reliability is important for system administrators in reducing system failures.  To achieve this objective, the message logs from cluster system are augmented with failure information, i.e., the raw log data is labeled.  However, tagging or labeling of raw log data is very costly.  In this paper, our objective is to detect failure patterns in the message logs using unlabelled data.  To achieve our aim, we propose a methodology whereby a pre-processing step is first performed where redundant data is removed.  A clustering algorithm is then executed on the resulting logs, and we further developed an unsupervised algorithm to detect failure patterns in the clustered log by harnessing the characteristics of these sequences.  We evaluated our methodology on large production data, and results shows that, on average, an f-measure of 78% can be obtained without having data labels.  The implication of our methodology is that a system administrator with little knowledge of the system can detect failure runs with reasonably high accuracy. </p>
 
 <hr>
 
-<p>Title:  Insights into the Diagnosis of System Failures from Cluster Message Logs<br>
-Collaborators:  Singapore Polytechnic (Singapore), University of Warwick (UK), University of Texas at Austin (USA), Texas Advanced Computing Center (USA), Seagate Technology (UK)<br>
-Publication:  EDCC 2015.  <a href="http://dx.doi.org/10.1109/EDCC.2015.19">http://dx.doi.org/10.1109/EDCC.2015.19</a> 
+<p><strong>Title:  Insights into the Diagnosis of System Failures from Cluster Message Logs</strong><br>
+<strong>Collaborators</strong>:  Singapore Polytechnic (Singapore), University of Warwick (UK), University of Texas at Austin (USA), Texas Advanced Computing Center (USA), Seagate Technology (UK)<br>
+<strong>Publication</strong>:  EDCC 2015.  <a href="http://dx.doi.org/10.1109/EDCC.2015.19">http://dx.doi.org/10.1109/EDCC.2015.19</a> 
 <br><br>
 Large cluster systems are composed of complex, interacting hardware and software components. Components or the interactions between components, may fail due to many different reasons, leading to the eventual failure of executing jobs.  This paper investigates an open question about failure diagnosis: What are the characteristics of the errors that lead to cluster system failures?  To this end, this paper gives a systematic process for identifying and characterizing the root-causes of failures.  We applied an extended version of the FDiagV3 diagnostics toolkit to the log-files of the Ranger and Lonestar supercomputers.  Our results show that: (i) failures were a result of recurrent issues and errors, (ii) a small set of nodes are associated with these issues and errors, and (iii) Ranger and Lonestar display similar sets of problems.  FDiagV3 will be put in the public domain for support of failure diagnosis for large cluster systems in May, 2015.</p>
       </section>
@@ -76,6 +76,7 @@ Large cluster systems are composed of complex, interacting hardware and software
       <footer class="inner">
         <p class="copyright">About us maintained by <a href="https://github.com/diag-toolkits">diag-toolkits</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p>Contact: edwardchuah@A where A = acm.org</p>
       </footer>
     </div>
 
